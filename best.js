@@ -60,7 +60,7 @@ try {
     console.log('found ' + validWords.length + ' valid 5 letter words');
 
     if (validWords.length === 1) {
-        validWords.map((word) => console.log({ word }));
+        console.log({ word: validWords[0] });
     } else {
         const letterFrequency = {};
         const letterPosFrequency = [{}, {}, {}, {}, {}];
@@ -109,6 +109,8 @@ try {
 
                 wordLetterScores[letter] = letterFrequency[letter];
 
+                if (yellows.flat().includes(letter))
+                    return score + letterPosFrequency[i][letter] / 5;
                 return score + letterPosFrequency[i][letter];
             }, 0);
 
@@ -129,6 +131,7 @@ try {
             information: calculateWordInformation(word),
         }));
 
+        wordScores.sort((a, b) => b.score - a.score);
         wordScores.sort((a, b) => b.information - a.information);
         wordScores = wordScores.map((word, i) => ({
             ...word,
