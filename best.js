@@ -1,14 +1,14 @@
 const fs = require('fs');
 
-const greens = 'p-o-y'.split('');
+const greens = '-----'.split('');
 const yellows = [
     ''.split(''),
     ''.split(''),
-    'r'.split(''),
+    ''.split(''),
     ''.split(''),
     ''.split(''),
 ];
-const blacks = 'taesin'.split('');
+const blacks = ''.split('');
 
 try {
     /**
