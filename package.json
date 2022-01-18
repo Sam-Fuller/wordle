@@ -1,17 +1,26 @@
 {
-  "name": "wwf",
-  "version": "1.0.0",
-  "description": "",
-  "main": "best.js",
-  "scripts": {
-    "best": "node best.js"
-  },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "fs": "^0.0.1-security"
-  },
-  "devDependencies": {
-    "@types/node": "^17.0.9"
-  }
+    "name": "wwf",
+    "version": "1.0.0",
+    "description": "",
+    "main": "best.js",
+    "scripts": {
+        "best": "node best.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "fs": "^0.0.1-security"
+    },
+    "devDependencies": {
+        "@types/node": "^17.0.9",
+        "eslint": "^7.32.0",
+        "eslint-config-prettier": "^8.3.0",
+        "eslint-plugin-import": "^2.23.4",
+        "eslint-plugin-node": "^11.1.0",
+        "eslint-plugin-prettier": "^3.4.0",
+        "eslint-plugin-promise": "^5.1.0",
+        "eslint-plugin-react": "^7.24.0",
+        "prettier": "^2.3.2",
+        "prettier-eslint": "^13.0.0"
+    }
 }
